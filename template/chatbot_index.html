@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center><h1> CAREERLEAPBOT</h1></center>
+    </head>
+    <body style="background-color: #FFFACD;">
+        <center><img src="{{url_for('static', filename='/Image/mainpicstatic2.png')}}" name="img1" style="margin-top: -30px;"></center>
+        <h4  style="margin-left: 15%;font-size: x-large;">BOT : My name is Spidey, I am Aniruth's first bot model, and if you want to exit any
+             time, just type Bye!"</h4>
+        <form action="{{ url_for('response1')}}" method="post">
+            <input style="margin-left: 30%;font-size: x-large;"size="40%" style="height:450px; width:250px;" type="text" placeholder="Enter your Query" 
+            name="sample query" required="required" />
+            <button style="margin-left: 2%;font-size: x-large;" type="submit" class="btn btn-primary btn-block btn-large"> Ask </button>
+        </form>
+
+        
+    </body>
+</html>
